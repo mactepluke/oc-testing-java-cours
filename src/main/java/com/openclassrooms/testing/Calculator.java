@@ -14,11 +14,11 @@ public class Calculator {
 	}
 
 	public Set<Integer> digitsSet(int number) {
-		Set<Integer> integers = new HashSet<Integer>();
+		Set<Integer> integers = new HashSet<>();
 		String numberString = String.valueOf(number);
-		
+
 		for (int i = 0; i < numberString.length(); i++) {
-			integers.add(Integer.parseInt(numberString, i, i+1, 10));
+			integers.add(Integer.parseInt(numberString, i, i + 1, 10));
 		}
 		return integers;
 	}
